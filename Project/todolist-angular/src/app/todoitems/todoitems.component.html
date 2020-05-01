@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-5">
+    <app-item-list></app-item-list>
+  </div>
+  <div class="col-md-7">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<!--old code:-->
+<!--<app-item-detail-->
+<!--*ngIf="selectedTodoItem; else infoText"-->
+<!--[todoitem]="selectedTodoItem"></app-item-detail>-->
+<!--<ng-template #infoText>-->
+<!--<p>Please select a TodoItem !</p>-->
+<!--</ng-template>-->

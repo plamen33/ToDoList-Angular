@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewTodoItem()">New ToDo item</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <!-- onTodoItemSelected method should be implemented in the  item-list.component.ts -->
+    <app-todo-item
+      *ngFor="let todoitemElem of todoitems; let i = index"
+      [todoitem]="todoitemElem"
+      [index]="i"
+    ></app-todo-item>
+  </div>
+
+</div>
